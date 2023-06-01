@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+
+  .items {
+    display: none;
+  }
+
+  .home-container {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about img {
+    height: 250px;
+  }
+
+  .project {
+    width: 600px;
+  }
+}
