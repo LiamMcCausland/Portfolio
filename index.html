@@ -2,82 +2,93 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mobile-style.css">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-style.css">
+    <title>Portfolio</title>
 </head>
 
 <body>
-  <nav>
-    <div class="nav-container">
-      <div class="title"> <span>&#60;</span> /Liam <span>&#62;</span> </div>
-      <div class="items">
-        <!-- <button id="homeButton" onclick="scrollToDiv()">Home</button> -->
-        <div class="item" onclick="scrollToHome()">Home</div>
-        <div class="item" onclick="scrollToAbout()">About</div>
-        <div class="item" onclick="scrollToProjects()">Projects</div>
-        <div class="item" onclick="scrollToContact()">Contact</div>
-      </div>
-    </div>
-  </nav>
-
-  <main class="section-container">
-    <section class="home">
-      <div class="home-container">
-        <!-- flex1 -->
-        <div>
-          <h1 class="job-title">Front-End Web Developer<span id="okaySign">👌</span></h1>
-          <p>Hi, I'm Liam McCausland. A passionate Front-end Web Developer based in Winnipeg, Manitoba. 📍</p>
-          <!-- svgs -->
+    <nav>
+        <div class="nav-container">
+            <div class="title"> <span>&#60;</span> /Liam <span>&#62;</span> </div>
+            <div class="items">
+                <!-- <button id="homeButton" onclick="scrollToDiv()">Home</button> -->
+                <div class="item" onclick="scrollToHome()">Home</div>
+                <div class="item" onclick="scrollToAbout()">About</div>
+                <div class="item" onclick="scrollToProjects()">Projects</div>
+                <div class="item" id="resume-button" onclick="">Resume</div>
+            </div>
         </div>
-        <img id="profile-pic" src="assets/pic.jpg" alt="">
-      </div>
-    </section>
+    </nav>
 
-    <section class="about">
-      <img src="assets/laptop-on-desk-from-above.jpg">
-      <div class="about-container">
-        <h2 id="about-me">About me</h2>
-        <h1 id="status">A dedicated Front-end Web Developer based in Winnipeg, Manitoba 📍</h1>
-        <p id="about-content">
-          I'm a high school student with a passion for web development. From an early age, I was captivated by the
-          internet and its ability to connect people and share information. I took it upon myself to learn the art of
-          coding and immersed myself in the world of HTML, CSS, and JavaScript. With each project I undertook, my skills
-          grew, and I became adept at creating visually appealing and user-friendly websites. My goal as a high school
-          web developer is to continue honing my skills, exploring new technologies, and making a positive impact
-          through innovative and engaging web experiences.</p>
-      </div>
-    </section>
+    <main class="section-container">
+        <section class="home">
+            <div class="home-container">
+                <!-- flex1 -->
+                <div>
+                    <h1 class="job-title">Computer Science!!<span id="okaySign">👌</span></h1>
+                    <p>Hi, I'm Liam McCausland. A passionate university student studying computer science at the
+                        University of
+                        Manitoba. 📍</p>
+                    <!-- svgs -->
+                </div>
+                <img id="profile-pic" src="assets/pic.jpg" alt="">
+            </div>
+        </section>
 
-    <section class="projects">
-      <div class="titles">
-        <h1 class="header">Portfolio</h1>
-        <h1 class="projects-sub">Each project is a unique piece of development 🧩</h1>
-      </div>
-      <div class="projects-container">
-        <div class="project" id="proj1" data-tilt data-tilt-perspective="2000">
-          <a href="https://liammccausland.github.io/8ball-project/">8 ball</a>
-        </div>
-        <div class="project" id="proj1" data-tilt data-tilt-perspective="2000">
+        <section class="about">
+            <img src="assets/laptop-on-desk-from-above.jpg">
+            <div class="about-container">
+                <h2 id="about-me">About me</h2>
+                <h1 id="status">A passionate university student studying computer science at the University of
+                    Manitoba. 📍</h1>
+                <p id="about-content">
+                    I'm a university student with a passion for software development. From an early age, I was
+                    captivated by the
+                    internet and its ability to connect people and share information. I took it upon myself to learn the
+                    art of
+                    coding and immersed myself in the world of different coding languages. My goal as a university
+                    student
+                    is to continue honing my skills and exploring new technologies.</p>
+            </div>
+        </section>
 
-        </div>
-        <div class="project" id="proj3" data-tilt data-tilt-perspective="2000">
+        <section class="projects">
+            <div class="titles">
+                <h1 class="header">Portfolio</h1>
+                <h1 class="projects-sub">Each project is a unique piece of development 🧩</h1>
+            </div>
+            <div class="projects-container">
+                <!--First project-->
+                <div class="project" id="proj1" data-tilt data-tilt-perspective="2000">
+                    <a href="https://github.com/LiamMcCausland/InternalAssessment"> <img src="assets/quiza.png" alt=""
+                            href="https://github.com/LiamMcCausland/InternalAssessment">
+                    </a>
+                    <div class="description-container">
+                        <h1>Internal Assessment</h1>
+                        <h2 id="proj-description">I created this piece of software as a final assignment from my grade
+                            12 CS40SIB
+                            course.
+                            It works as a program to store quizes created by the user locally and display them.</h2>
+                    </div>
+                </div>
+                <!-- Add next project after here -->
+            </div>
+        </section>
+    </main>
 
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="scroll.js"></script>
-  <script src="node_modules/jquery/dist/jquery.js"></script>
-  <script src="node_modules/tilt.js/src/tilt.jquery.js"></script>
+    <script src="scroll.js"></script>
+    <script src="script.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/tilt.js/src/tilt.jquery.js"></script>
 </body>
 
 
