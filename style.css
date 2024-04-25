@@ -18,6 +18,10 @@ body {
     font-weight: 800;
 }
 
+#resume-icon {
+    display: none;
+}
+
 .nav-container {
     z-index: 999;
     height: 90px;
@@ -187,7 +191,6 @@ section p {
     font-size: 20px;
 }
 
-
 .project img {
     border: #f1f1f1;
     border-radius: 50px;
@@ -215,10 +218,6 @@ section p {
         /* Adjust margin for mobile */
     }
 
-    .items {
-        display: none;
-    }
-
     .nav-container {
         height: 70px;
         /* Adjust height for mobile */
@@ -240,11 +239,11 @@ section p {
     .home-container {
         height: auto;
         /* Adjust height for mobile */
-        flex-direction: column;
+        flex-direction: column-reverse;
         /* Adjust flex direction for mobile */
         gap: 20px;
         /* Adjust gap for mobile */
-        padding: 20px;
+        padding-top: 100px;
         /* Add padding for mobile */
     }
 
@@ -254,13 +253,16 @@ section p {
         width: auto;
         /* Adjust width for mobile */
         text-align: center;
-        margin-top: 100px;
         /* Align text center for mobile */
     }
 
     #profile-pic {
         height: 250px;
         /* Adjust height for mobile */
+    }
+
+    #okay-sign {
+        display: none;
     }
 
     section p {
@@ -279,13 +281,19 @@ section p {
         /* Adjust gap for mobile */
         padding: 20px;
         /* Add padding for mobile */
+        font-size: medium;
     }
 
+    .item,
+    #status,
+    #proj-description,
     .about img {
-        height: 300px;
-        /* Adjust height for mobile */
-        width: auto;
-        /* Adjust width for mobile */
+        display: none;
+    }
+
+    #about-content {
+        color: black;
+        margin: 10px;
     }
 
     .about-container {
@@ -293,11 +301,6 @@ section p {
         /* Adjust max-width for mobile */
         align-items: center;
         /* Align items center for mobile */
-    }
-
-    .projects {
-        padding: 20px;
-        /* Add padding for mobile */
     }
 
     .header {
@@ -324,20 +327,26 @@ section p {
         /* Adjust margin for mobile */
         border-radius: 20px;
         /* Adjust border-radius for mobile */
+        flex-direction: column;
+    }
+
+    #school-proj-image,
+    #quiz-image {
+        margin: 0;
+        padding: 10px;
     }
 
     .description-container {
-        padding: 20px;
-        /* Add padding for mobile */
+        margin: 0;
     }
 
-    #proj-description {
-        font-size: 16px;
-        /* Adjust font size for mobile */
+    .proj-img {
+        width: auto;
+        height: auto;
     }
 
-    #school-proj-image {
-        /* width: 200px; */
-        /* Adjust width for mobile */
+    #resume-icon,
+    #resume-button {
+        display: flex;
     }
 }

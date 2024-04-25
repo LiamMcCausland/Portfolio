@@ -23,7 +23,7 @@
                 <div class="item" onclick="scrollToHome()">Home</div>
                 <div class="item" onclick="scrollToAbout()">About</div>
                 <div class="item" onclick="scrollToProjects()">Projects</div>
-                <div class="item" id="resume-button">Resume</div>
+                <div class="item" id="resume-button">Resume <span id="resume-icon">📝</span></div>
             </div>
         </div>
     </nav>
@@ -33,7 +33,7 @@
             <div class="home-container">
                 <!-- flex1 -->
                 <div>
-                    <h1 class="job-title">Liam McCausland<span id="okaySign">👌</span></h1>
+                    <h1 class="job-title">Liam McCausland<span id="okay-sign">👌</span></h1>
                     <p>Hi! I'm a passionate university student studying computer science at the
                         University of
                         Manitoba. 📍</p>
@@ -66,8 +66,9 @@
             <div class="projects-container">
                 <!--First project-->
                 <div class="project" id="proj1" data-tilt data-tilt-perspective="2000">
-                    <a href="https://github.com/LiamMcCausland/InternalAssessment"> <img id="quiz-image"
-                            src="assets/quiza.png" alt="" href="https://github.com/LiamMcCausland/InternalAssessment">
+                    <a href="https://github.com/LiamMcCausland/InternalAssessment"> <img class="proj-img"
+                            id="quiz-image" src="assets/quiza.png" alt=""
+                            href="https://github.com/LiamMcCausland/InternalAssessment">
                     </a>
                     <div class="description-container">
                         <h1>Internal Assessment</h1>
@@ -79,8 +80,8 @@
                 </div>
                 <!-- Add next project after here -->
                 <div class="project" id="proj1" data-tilt data-tilt-perspective="2000">
-                    <a href="https://drive.google.com/drive/folders/105uQ7EPIPaIzRGh416kjc32TSTUn1V6U?usp=sharing"> <img
-                            id="school-proj-image" src="assets/coding-picture.png"></a>
+                    <a href="https://drive.google.com/drive/folders/105uQ7EPIPaIzRGh416kjc32TSTUn1V6U?usp=sharing">
+                        <img class="proj-img" id="school-proj-image" src="assets/coding-picture.png"></a>
                     <div class="description-container">
                         <h1>School Assignments Dump ✌️</h1>
                         <h2 id="proj-description">This link holds all the assignments I have worked through in my
