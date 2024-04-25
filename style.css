@@ -10,7 +10,7 @@ span {
 
 body {
     background-color: #f1f1f1;
-    margin-bottom: 10000px;
+    margin-bottom: 1000px;
 }
 
 .title {
@@ -186,9 +186,11 @@ section p {
     font-size: 20px;
 }
 
-#school-proj-image {
+
+.project img {
     border: #f1f1f1;
     border-radius: 50px;
+    margin-top: 25%;
     width: 300px;
 }
 
