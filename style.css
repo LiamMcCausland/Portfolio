@@ -204,7 +204,7 @@ section p {
 /* Keep the original CSS for desktop */
 
 /* Media query for mobile devices */
-@media (pointer:none), (pointer:coarse) {
+@media screen and (max-width: 930px) {
     body {
         margin-bottom: 0;
         /* Adjust margin for mobile */
@@ -216,7 +216,7 @@ section p {
     }
 
     .items {
-        display: nones;
+        display: none;
     }
 
     .nav-container {
@@ -254,6 +254,7 @@ section p {
         width: auto;
         /* Adjust width for mobile */
         text-align: center;
+        margin-top: 100px;
         /* Align text center for mobile */
     }
 
