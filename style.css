@@ -179,6 +179,7 @@ section p {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
 }
 
 #proj-description {
@@ -190,14 +191,20 @@ section p {
 .project img {
     border: #f1f1f1;
     border-radius: 50px;
-    margin-top: 25%;
+    margin-top: 20%;
     width: 300px;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+#school-proj-image {
+    height: 250px;
 }
 
 /* Keep the original CSS for desktop */
 
 /* Media query for mobile devices */
-@media only screen and (max-width: 768px) {
+@media (pointer:none), (pointer:coarse) {
     body {
         margin-bottom: 0;
         /* Adjust margin for mobile */
@@ -206,6 +213,10 @@ section p {
     .title {
         margin-left: 20px;
         /* Adjust margin for mobile */
+    }
+
+    .items {
+        display: nones;
     }
 
     .nav-container {
@@ -299,7 +310,7 @@ section p {
     }
 
     .projects-container {
-        width: 100%;
+        width: 65%;
         /* Adjust width for mobile */
     }
 
@@ -325,7 +336,7 @@ section p {
     }
 
     #school-proj-image {
-        width: 200px;
+        /* width: 200px; */
         /* Adjust width for mobile */
     }
 }
