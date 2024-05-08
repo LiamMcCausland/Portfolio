@@ -33,8 +33,8 @@ body {
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    -webkit-box-shadow: 1px 23px 15px -7px rgba(0, 0, 0, 0.06);
-    box-shadow: 1px 23px 15px -7px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: 1px 16px 15px -7px rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 16px 15px -7px rgba(0, 0, 0, 0.06);
 }
 
 .items {
@@ -58,13 +58,39 @@ body {
 
 /* End of nav css */
 
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
 .home-container {
     height: 1080px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 45px;
+    gap: 100px;
     margin-bottom: 100px;
+}
+
+.profile-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.languages img {
+    width: 80px;
 }
 
 .job-title {
@@ -239,13 +265,23 @@ section p {
     .home-container {
         height: auto;
         /* Adjust height for mobile */
-        flex-direction: column-reverse;
+        flex-direction: column;
         /* Adjust flex direction for mobile */
         gap: 20px;
         /* Adjust gap for mobile */
         padding-top: 100px;
         /* Add padding for mobile */
     }
+
+    .profile-items {
+        flex-direction: column-reverse;
+    }
+
+    .languages img {
+        width: 50px;
+    }
+
+
 
     .job-title {
         font-size: 35px;
@@ -273,7 +309,7 @@ section p {
     }
 
     .about {
-        height: auto;
+        height: 300px;
         /* Adjust height for mobile */
         flex-direction: column;
         /* Adjust flex direction for mobile */
