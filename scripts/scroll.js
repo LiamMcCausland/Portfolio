@@ -1,21 +1,26 @@
-const section1 = document.getElementsByClassName(".section-1");
+// Map numbers to section selectors
+const sections = {
+  1: '.home',
+  2: '.about',
+  3: '.projects'
+};
 
-function scrollToHome() {
-  document.querySelector('.home').scrollIntoView({
-    behavior: 'smooth'
-  });
+// Generic scroll function
+function scrollToSection(number) {
+  const sectionSelector = sections[number];
+  if (sectionSelector) {
+    document.querySelector(sectionSelector).scrollIntoView({
+      behavior: 'smooth'
+    });
+  } else {
+    console.warn('No section for number:', number);
+  }
 }
 
-function scrollToAbout() {
-  document.querySelector('.about').scrollIntoView({
-    behavior: 'smooth'
-  });
-}
-
-function scrollToProjects() {
-  document.querySelector('.projects').scrollIntoView({
-    behavior: 'smooth'
-  });
-}
-
-
+// Listen for key presses
+document.addEventListener('keydown', (event) => {
+  const key = event.key; // This is the character of the key pressed
+  if (['1', '2', '3'].includes(key)) {
+    scrollToSection(parseInt(key));
+  }
+});
