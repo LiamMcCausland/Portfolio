@@ -95,6 +95,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
 .languages {
@@ -112,6 +113,10 @@ body {
 .job-title {
     font-size: 55px;
     width: 500px;
+}
+
+.job-subtitle {
+    padding-left: 10px;
 }
 
 #profile-pic {
