@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <nav>
         <div class="nav-container">
             <div class="title"> <span>&#60;</span> /Liam <span>&#62;</span> </div>
@@ -33,13 +34,13 @@
             <div class="home-container">
                 <div class="profile-items">
                     <div>
-                        <h1 class="job-title">Liam McCausland<span id="okay-sign">👌</span></h1>
+                        <h1 class="job-title" id="job-title"> Liam McCausland</h1>
                         <p>Hi! I'm a passionate university student studying computer science at the
                             University of
                             Manitoba. 📍</p>
-                        <!-- svgs -->
                     </div>
-                    <img id="profile-pic" src="assets/pic.jpg" alt="">
+                    <div id="three-bg"></div>
+
                 </div>
                 <div class="languages">
                     <img
@@ -47,64 +48,61 @@
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
                 </div>
             </div>
         </section>
 
         <section class="about">
-            <img src="assets/laptop-on-desk-from-above.jpg">
-            <div class="about-container">
-                <h2 id="about-me">About me</h2>
-                <h1 id="status">A passionate university student studying computer science at the University of
+            <div class="about-section-container" data-tilt data-tilt-perspective="2000">
+                <img id="profile-pic" src="assets/pic.jpg" alt="">
+                <div class="about-container">
+                    <h2 id="about-me">About me</h2>
+                    <h1 id="status">A passionate university student studying computer science at the University of
                     Manitoba. 📍</h1>
-                <p id="about-content">
+                    <p id="about-content">
                     I'm a university student with a passion for software development. From an early age, I was
                     captivated by the
                     internet. My goal as a university
                     student
                     is to continue honing my skills and exploring new technologies.</p>
             </div>
+            </div>
         </section>
+
+        <!-- Projects Section -->
 
         <section class="projects">
             <div class="titles">
                 <h1 class="header">Portfolio</h1>
                 <h1 class="projects-sub">Each project is a unique piece of development 🧩</h1>
             </div>
-            <div class="projects-container">
-                <!--First project-->
-                <div class="project" id="proj1" data-tilt data-tilt-perspective="2000">
-                    <a href="https://github.com/LiamMcCausland/InternalAssessment"> <img class="proj-img"
-                            id="quiz-image" src="assets/quiza.png" alt=""
-                            href="https://github.com/LiamMcCausland/InternalAssessment">
-                    </a>
-                    <div class="description-container">
-                        <h1>Internal Assessment</h1>
-                        <h2 id="proj-description">I created this piece of software as a final assignment from my grade
-                            12 CS40SIB
-                            course.
-                            It works as a program to store quizes created by the user locally and display them.</h2>
-                    </div>
-                </div>
-                <!-- Add next project after here -->
-                <div class="project" id="proj1" data-tilt data-tilt-perspective="2000">
-                    <a href="https://drive.google.com/drive/folders/105uQ7EPIPaIzRGh416kjc32TSTUn1V6U?usp=sharing">
-                        <img class="proj-img" id="school-proj-image" src="assets/coding-picture.png"></a>
-                    <div class="description-container">
-                        <h1>School Assignments Dump ✌️</h1>
-                        <h2 id="proj-description">This link holds all the assignments I have worked through in my
-                            studies a university. Taken out of context, some of theses assignments might not make sense
-                            but they do hold value in showing my coding ethics and standards.</h2>
-                    </div>
-                </div>
+            <div id="projects-container">
+                
+
             </div>
         </section>
     </main>
 
+    <script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="typing.js"></script>
     <script src="scroll.js"></script>
     <script src="script.js"></script>
+    <script src="projects.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/tilt.js/src/tilt.jquery.js"></script>
+    <script type="module" src="three-bg.js"></script>
 </body>
 
 </html>

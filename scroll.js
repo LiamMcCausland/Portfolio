@@ -17,3 +17,5 @@ function scrollToProjects() {
     behavior: 'smooth'
   });
 }
+
+
