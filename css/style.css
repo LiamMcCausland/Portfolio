@@ -61,7 +61,7 @@ body {
 }
 
 .item:hover {
-    color: rgb(93, 169, 236);
+    color: #ffac83;
     cursor: pointer;
 }
 
