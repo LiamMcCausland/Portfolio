@@ -41,7 +41,7 @@ function AnimatedRoutes() {
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ChakraProvider value={defaultSystem}>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Nav />
           <AnimatedRoutes />
         </BrowserRouter>
