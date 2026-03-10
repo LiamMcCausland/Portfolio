@@ -26,7 +26,7 @@ function Projects() {
             <div className='projects-container'>
                 <Card.Root maxW="sm" overflow="hidden" bg="#2E2E2E" borderWidth="1px" borderColor="black">
                     <Image
-                        src="/src/assets/image.png"
+                        src="assets/image.png"
                     />
                     <Card.Body>
                         <Card.Title color="white">Automata Builder</Card.Title>

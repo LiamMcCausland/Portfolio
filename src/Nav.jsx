@@ -16,7 +16,7 @@ function Nav() {
             Projects
           </ChakraLink>
           <ChakraLink
-            href="./src/assets/resume.pdf"
+            href="assets/resume.pdf"
             className="nav-link"
             isExternal
           >

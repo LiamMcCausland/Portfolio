@@ -24,7 +24,7 @@ export default function Home() {
         <AvatarGroup>
           <Avatar.Root className="avatar" size={"1xl"}>
             <Avatar.Fallback name="Liam McCausland" />
-            <Avatar.Image src="/src/assets/pic.jpg" />
+            <Avatar.Image src="assets/pic.jpg" />
           </Avatar.Root>
         </AvatarGroup>
       </Box>
@@ -42,7 +42,9 @@ export default function Home() {
         </Heading>
         <div className="about-items">
           <Box className="body-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            I am a Computer Science student at the <i>University of Manitoba</i> with a long-standing interest in technology and how software works behind the scenes. From a young age I enjoyed exploring computers, experimenting with programs, and learning how things function at a deeper level. That curiosity eventually led me to pursue computer science in university.
+
+Throughout my studies and personal projects, I have gained experience with several programming languages and development tools. I enjoy building projects, learning new technologies, and improving my problem-solving skills through coding. I’m especially interested in understanding how systems work and creating software that is both practical and well-designed.
           </Box>
 
         </div>

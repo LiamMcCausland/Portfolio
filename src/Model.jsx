@@ -5,7 +5,7 @@ import * as THREE from 'three'
 
 export default function Model() {
   const group = useRef()
-  const { scene } = useGLTF('src/assets/computer/scene.gltf')
+  const { scene } = useGLTF('assets/computer/scene.gltf')
 
   // Center the model
   useLayoutEffect(() => {
@@ -24,7 +24,7 @@ export default function Model() {
   return (
     <group ref={group}>
       <primitive object={scene} scale={0.45} />
-      
+
       {/* Interactive Controls */}
       <OrbitControls
         enablePan={true}          // allow moving camera
