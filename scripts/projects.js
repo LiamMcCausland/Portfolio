@@ -60,6 +60,18 @@ document.addEventListener('DOMContentLoaded', () => {
             imgSrc: 'assets/image.png',
             title: 'Automata Builder ↱',
             description: 'Simple automata builder I made for my Automata theory class. Build DFAs, NFAs, and Turing Machines.'
+        },        {
+            id: 'proj1',
+            link: 'https://liammccausland.github.io/Automata-Builder/',
+            imgSrc: 'assets/image.png',
+            title: 'Automata Builder ↱',
+            description: 'Simple automata builder I made for my Automata theory class. Build DFAs, NFAs, and Turing Machines.'
+        },        {
+            id: 'proj1',
+            link: 'https://liammccausland.github.io/Automata-Builder/',
+            imgSrc: 'assets/image.png',
+            title: 'Automata Builder ↱',
+            description: 'Simple automata builder I made for my Automata theory class. Build DFAs, NFAs, and Turing Machines.'
         }
     ];
 

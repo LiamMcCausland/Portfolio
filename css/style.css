@@ -15,11 +15,8 @@ body {
 
 #three-bg {
     width: 450px;
-    /* width of your profile pic */
     height: 450px;
-    /* height of your profile pic */
     background-color: rgb(50, 50, 50);
-    /* fallback background */
 }
 
 .title {
@@ -117,6 +114,11 @@ body {
 
 .job-subtitle {
     padding-left: 10px;
+}
+
+.university {
+    font-weight: 600;
+    color: #ffac83;
 }
 
 #profile-pic {
@@ -262,4 +264,144 @@ section p {
 #school-proj-image {
     height: 250px;
 }
+
+/* ========================= */
+/* MOBILE RESPONSIVE STYLES */
+/* ========================= */
+@media (max-width: 768px) {
+
+    /* General */
+    body {
+        overflow-x: hidden;
+    }
+
+    section p {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* NAV */
+    .nav-container {
+        height: 70px;
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .title {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .items {
+        margin-right: 0;
+        gap: 12px;
+        font-size: 16px;
+    }
+
+    /* HOME */
+    .home-container {
+        height: auto;
+        padding-top: 120px;
+        gap: 50px;
+    }
+
+    .profile-items {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    #three-bg {
+        width: 280px;
+        height: 280px;
+    }
+
+    #profile-pic {
+        height: 250px;
+    }
+
+    .job-title {
+        width: 100%;
+        font-size: 36px;
+        padding: 0 20px;
+    }
+
+    .job-subtitle {
+        padding-left: 0;
+    }
+
+    /* LANGUAGES */
+    .languages {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .languages img {
+        width: 50px;
+    }
+
+    /* ABOUT */
+    .about {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .about-section-container {
+        flex-direction: column;
+        padding: 40px 30px;
+        border-radius: 40px;
+        gap: 40px;
+    }
+
+    .about img {
+        height: 260px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-container {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* PROJECTS */
+    .project {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        border-radius: 30px;
+        padding-bottom: 30px;
+    }
+
+    .project img {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+
+    #school-proj-image {
+        height: auto;
+        width: 90%;
+    }
+
+    .description-container {
+        margin-top: 20px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    #proj-description {
+        font-size: 16px;
+    }
+
+    .projects-sub {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .header {
+        margin-top: 60px;
+        text-align: center;
+    }
+}
+
 
