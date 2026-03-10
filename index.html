@@ -1,113 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
-</head>
-
-<body>
-    <nav>
-        <div class="nav-container">
-            <div class="title"> <span>&#60;</span> /Liam <span>&#62;</span> </div>
-            <div class="items">
-                <div class="nav-item">
-                    <div class="item" onclick="scrollToSection(1)">Home</div>
-                </div>
-
-                <div class="nav-item">
-                    <div class="item" onclick="scrollToSection(2)">About</div>
-                </div>
-                <div class="nav-item">
-                    <div class="item" onclick="scrollToSection(3)">Projects</div>
-                </div>
-                <div class="item" id="resume-button">Resume <span id="resume-icon">📝</span></div>
-            </div>
-        </div>
-    </nav>
-
-    <main class="section-container">
-        <section class="home">
-            <div class="home-container">
-                <div class="profile-items">
-                    <div>
-                        <h1 class="job-title" id="job-title"> Liam McCausland</h1>
-                        <p class="job-subtitle">Hi! I'm a passionate university student studying computer science at the
-                            <span class="university"> University of
-                            Manitoba.</span> 📍</p>
-                    </div>
-                    <div id="three-bg"></div>
-
-                </div>
-                <div class="languages">
-                    <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                    <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                    <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="about-section-container" data-tilt data-tilt-perspective="2000">
-                <img id="profile-pic" src="assets/pic.jpg" alt="">
-                <div class="about-container">
-                    <h2 id="about-me">About me</h2>
-                    <h1 id="status">A passionate university student studying computer science at the University of
-                        Manitoba. 📍</h1>
-                    <p id="about-content">
-                        I'm a university student with a passion for software development. From an early age, I was
-                        captivated by the
-                        internet. My goal as a university
-                        student
-                        is to continue honing my skills and exploring new technologies.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-
-        <section class="projects">
-            <div class="titles">
-                <h1 class="header">Portfolio</h1>
-                <h1 class="projects-sub">Each project is a unique piece of development 🧩</h1>
-            </div>
-            <div id="projects-container">
-            </div>
-        </section>
-    </main>
-
-    <script type="importmap">
-{
-  "imports": {
-    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-  }
-}
-</script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="scripts/typing.js"></script>
-    <script src="scripts/scroll.js"></script>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/projects.js"></script>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/tilt.js/src/tilt.jquery.js"></script>
-    <script type="module" src="scripts/three-bg.js"></script>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liam McCausland</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
