@@ -40,9 +40,44 @@ function Projects() {
                         </Button>
                     </Card.Footer>
                 </Card.Root>
+
+                <Card.Root maxW="sm" overflow="hidden" bg="#2E2E2E" borderWidth="1px" borderColor="black">
+                    <Image
+                        src="assets/rebound.png"
+                    />
+                    <Card.Body>
+                        <Card.Title color="white">Rebound Roblox Game</Card.Title>
+                        <Card.Description color="white">
+                          An imitation of Valves game Ricochet, created in Roblox. This experience helped me refine my skills with lua and further my knowledge in game development, since dabbling with Unity.
+                        </Card.Description>
+                    </Card.Body>
+                    <Card.Footer gap="2">
+                        <Button variant="solid" _hover={{borderColor: "white",}}>
+                            <a href="https://www.roblox.com/games/18308161633/Rebound"><span style={{ color: "white" }}>Visit</span></a>
+                        </Button>
+                    </Card.Footer>
+                </Card.Root>
+
+                <Card.Root maxW="sm" overflow="hidden" bg="#2E2E2E" borderWidth="1px" borderColor="black">
+                    <Image
+                        src="assets/java.png"
+                    />
+                    <Card.Body>
+                        <Card.Title color="white">COMP 2450 Battleship Project</Card.Title>
+                        <Card.Description color="white">
+                          A battleship like game where ships can move around and effects can be picked up around the board. Uses pathfinding algorithm for submarine movement and was the project for my COMP 2450 course.
+                        </Card.Description>
+                    </Card.Body>
+                    <Card.Footer gap="2">
+                        <Button variant="solid" _hover={{borderColor: "white",}}>
+                            <a href="https://drive.google.com/drive/folders/1LtvdmDPhnbTADDNjFQ4xhICHJk2-zjYH?usp=sharing"><span style={{ color: "white" }}>Visit</span></a>
+                        </Button>
+                    </Card.Footer>
+                </Card.Root>
             </div>
         </div>
     )
 }
 
 export default Projects
+
