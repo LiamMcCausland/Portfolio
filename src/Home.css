@@ -1,0 +1,122 @@
+#home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.home-items {
+  margin-top: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.intro-text {
+  /* Glassy/frosted effect */
+  font-size: .8rem;
+  background-color: rgba(46, 46, 46, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: .5rem 5rem;
+}
+
+.university-text {
+  font-weight: 400;
+  color: wheat;
+}
+
+.pfp-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 560px;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  font-family: 'Red Hat Mono', monospace;
+}
+
+.sub-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  font-family: 'Red Hat Mono', monospace;
+}
+
+.about-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-container .heading {
+  margin-left: 20px;
+}
+
+.about-items {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  max-width: 600px;
+}
+
+.avatar {
+  border: 1px solid white;
+  width: 150px;
+  height: 150px;
+}
+
+.body-text {
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  max-width: 560px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.languages {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.languages img {
+  flex-shrink: 1;
+  width: 40px;
+}
+
+@media (max-width: 600px) {
+  .intro-text {
+    display: none;
+  }
+
+  .pfp-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 560px;
+    gap: 20px;
+  }
+}
