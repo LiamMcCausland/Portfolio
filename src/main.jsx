@@ -7,6 +7,7 @@ import './index.css'
 import Nav from './Nav.jsx'
 import Home from './Home.jsx'
 import Projects from './Projects.jsx'
+import { ThemeProvider } from 'next-themes'
 
 
 // Wrapper to animate each page
@@ -41,10 +42,12 @@ function AnimatedRoutes() {
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ChakraProvider value={defaultSystem}>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Nav />
           <AnimatedRoutes />
         </BrowserRouter>
+      </ThemeProvider>
     </ChakraProvider>
   </StrictMode>
 )
