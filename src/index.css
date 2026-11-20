@@ -54,6 +54,22 @@ body {
   min-height: 100vh;
   color: var(--text-primary);
   background: var(--page-background);
+  overflow-x: hidden;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+*,
+*::before,
+*::after {
+  transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
 }
 
 h1 {

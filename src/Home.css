@@ -1,5 +1,7 @@
 #home {
   width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +27,10 @@
   border-bottom: 1px solid var(--surface-border);
   box-shadow: var(--surface-shadow);
   border-radius: 10px;
-  padding: .5rem 5rem;
+  padding: .5rem clamp(1rem, 5vw, 5rem);
+  max-width: calc(100% - 2rem);
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .university-text {
@@ -39,7 +44,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 560px;
+  width: min(560px, calc(100% - 2rem));
+  box-sizing: border-box;
 }
 
 .name {
@@ -61,10 +67,13 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: min(100%, 640px);
+  box-sizing: border-box;
+  padding: 0 1rem 2rem;
 }
 
 .about-container .heading {
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 .about-items {
@@ -73,6 +82,7 @@
   flex-direction: row;
   align-items: center;
   gap: 2rem;
+  width: 100%;
   max-width: 600px;
 }
 
@@ -99,11 +109,13 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
 .languages img {
   flex-shrink: 1;
-  width: 40px;
+  width: clamp(32px, 8vw, 40px);
 }
 
 @media (max-width: 600px) {
@@ -116,7 +128,16 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
-    width: 560px;
+    width: calc(100% - 2rem);
     gap: 20px;
+  }
+
+  .home-items {
+    width: 100%;
+    margin-top: 300px;
+  }
+
+  .about-items {
+    margin-top: 0;
   }
 }

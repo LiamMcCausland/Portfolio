@@ -33,8 +33,8 @@ export default function ModelSection() {
 const styles = {
     wrapper: {
         position: 'absolute',
-        width: '500px',
-        height: '400px',
-        margin: '20',
+        width: 'min(500px, 100vw)',
+        height: 'min(400px, 80vw)',
+        margin: 20,
     },
 }

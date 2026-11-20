@@ -28,6 +28,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .title {
@@ -67,8 +68,28 @@ body {
     /* hide theme button */
     display: none;
   }
+
+  .nav-items {
+    gap: clamp(8px, 3vw, 20px);
+  }
+
+  .nav-link {
+    font-size: clamp(.75rem, 2.8vw, 1rem);
+  }
   
 }
+.theme-btn {
+  transition: background-color 300ms ease, color 300ms ease, transform 300ms ease;
+}
+
+.theme-btn svg {
+  transition: transform 300ms ease;
+}
+
+.theme-btn:active svg {
+  transform: rotate(180deg);
+}
+
 .theme-btn:hover {
   background-color: var(--button-hover);
 }
