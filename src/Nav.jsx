@@ -46,7 +46,7 @@ function Nav() {
 
         <IconButton
           className="theme-btn"
-          aria-label="Toggle theme"
+          aria-label={resolvedTheme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
           onClick={toggleColorMode}
         >
           {resolvedTheme === 'dark' ? <FaSun /> : <FaMoon />}

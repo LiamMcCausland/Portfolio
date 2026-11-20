@@ -13,11 +13,11 @@ body {
   z-index: 999;
 
   /* Glassy/frosted effect */
-  background-color: rgba(46, 46, 46, 0.6);
+  background-color: var(--surface-glass);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--surface-border);
+  box-shadow: var(--surface-shadow);
 }
 
 .nav-container {
@@ -31,7 +31,7 @@ body {
 }
 
 .title {
-  color: white;
+  color: var(--text-primary);
   font-weight: bold;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .nav-link {
-  color: white;
+  color: var(--text-primary);
   text-decoration: none;
   font-weight: 500;
 }
@@ -57,7 +57,8 @@ body {
 }
 
 .theme-btn {
-  background-color: #242424;
+  background-color: var(--button-background);
+  color: var(--text-primary);
 }
 
 /* if mobile width */
@@ -67,4 +68,7 @@ body {
     display: none;
   }
   
+}
+.theme-btn:hover {
+  background-color: var(--button-hover);
 }
