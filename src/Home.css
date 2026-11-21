@@ -102,20 +102,48 @@
   font-size: 1rem;
 }
 
-.languages {
-
+.skills-list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  padding: 0 1rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
 }
 
-.languages img {
-  flex-shrink: 1;
-  width: clamp(32px, 8vw, 40px);
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.skill-group h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+}
+
+.skill-item {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .45rem .7rem;
+  border: 1px solid var(--surface-border);
+  border-radius: 999px;
+  background: var(--surface-glass);
+  color: var(--text-primary);
+  font-size: .85rem;
+  line-height: 1.2;
+}
+
+.skill-item svg {
+  flex-shrink: 0;
+  font-size: 1.05rem;
 }
 
 @media (max-width: 600px) {
