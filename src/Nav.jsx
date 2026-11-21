@@ -1,7 +1,7 @@
 import { Box, Flex, Link as ChakraLink, Text, IconButton } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import { useTheme } from 'next-themes'
-import { FaMoon, FaSun } from 'react-icons/fa'
+import { FaGithub, FaMoon, FaSun } from 'react-icons/fa'
 import './Nav.css'
 
 function Nav() {
@@ -41,6 +41,15 @@ function Nav() {
             rel="noopener noreferrer"
           >
             LinkedIn
+          </ChakraLink>
+
+          <ChakraLink
+            href="https://github.com/LiamMcCausland/Portfolio"
+            className="nav-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub aria-hidden="true" /> Source
           </ChakraLink>
         </Flex>
 
