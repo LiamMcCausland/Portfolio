@@ -1,123 +1,99 @@
+import { Heading } from '@chakra-ui/react'
+import { FaArrowUpRightFromSquare, FaGithub, FaLinkedin } from 'react-icons/fa6'
 import ModelSection from './ModelSection.jsx'
+import projects from './projectsData.js'
 import './Home.css'
-import { Box, Heading, Avatar, AvatarGroup } from '@chakra-ui/react'
-import {
-  SiApple,
-  SiC,
-  SiCplusplus,
-  SiChakraui,
-  SiCss3,
-  SiGit,
-  SiGithub,
-  SiHtml5,
-  SiIntellijidea,
-  SiOpenjdk,
-  SiJavascript,
-  SiLinux,
-  SiLua,
-  SiReact,
-  SiRoblox,
-  SiTypescript,
-  SiVim,
-  SiVite,
-  SiVitest,
-} from 'react-icons/si'
 
-const skillGroups = [
+const skills = [
+  ['Languages', 'Java · JavaScript · TypeScript · SQL · HTML/CSS · Lua · C · C++ · C#'],
+  ['Frameworks', 'React · Chakra UI · JointJS · Vite · Vitest'],
+  ['Tools', 'Git · GitHub · IntelliJ IDEA · Visual Studio Code · Vim · Roblox Studio · Microsoft Office 365'],
+  ['Practices', 'Object-Oriented Programming · SOLID · Unit Testing · UML · JSON Persistence · Debugging'],
+  ['Systems', 'Windows · Linux · macOS'],
+]
+
+const experience = [
   {
-    title: 'Coding Languages',
-    items: [
-      ['Java', SiOpenjdk], ['JavaScript', SiJavascript], ['TypeScript', SiTypescript],
-      ['SQL'], ['HTML', SiHtml5], ['CSS', SiCss3], ['Lua', SiLua],
-      ['C', SiC], ['C++', SiCplusplus], ['C#'],
-    ],
+    role: 'Physiotherapy Assistant',
+    organization: 'Elite Sports Injury',
+    dates: 'Aug 2024 — Present',
+    detail: 'Coordinate schedules, billing, client communication, and rehabilitation support in a busy clinical environment.',
   },
   {
-    title: 'Frameworks and Libraries',
-    items: [
-      ['React', SiReact], ['Chakra UI', SiChakraui], ['JointJS'],
-      ['Vite', SiVite], ['Vitest', SiVitest],
-    ],
-  },
-  {
-    title: 'Software Programs',
-    items: [
-      ['Git', SiGit], ['GitHub', SiGithub], ['IntelliJ IDEA', SiIntellijidea],
-      ['Visual Studio Code'], ['Vim', SiVim],
-      ['Roblox Studio', SiRoblox], ['Microsoft Office 365'],
-    ],
-  },
-  {
-    title: 'Practices',
-    items: [
-      ['Object-Oriented Programming'], ['SOLID Principles'], ['Unit Testing'],
-      ['UML Design'], ['JSON Data Persistence'], ['Debugging and Refactoring'],
-    ],
-  },
-  {
-    title: 'Operating Systems',
-    items: [['Windows'], ['Linux', SiLinux], ['macOS', SiApple]],
+    role: 'Stadium Operations General Labourer',
+    organization: 'Investors Group Field',
+    dates: 'Jun 2021 — Aug 2022',
+    detail: 'Prepared venues and fields for major events while collaborating with operations crews and following detailed floor plans.',
   },
 ]
 
-function SkillItem({ item }) {
-  const [label, Icon] = item
-  return (
-    <span className="skill-item">
-      {Icon && <Icon aria-hidden="true" />}
-      {label}
-    </span>
-  )
+function ExternalLink({ href, children }) {
+  return <a className="text-link" href={href} target="_blank" rel="noopener noreferrer">{children}<FaArrowUpRightFromSquare aria-hidden="true" /></a>
 }
 
 export default function Home() {
   return (
-    <div id="home">
-      <ModelSection />
-
-      <div className="home-items">
-        <Box className="intro-text">
-          Hi, I'm a programmer studying at <a href="https://umanitoba.ca/"><span className="university-text">the University of Manitoba</span></a>
-        </Box>
-      </div>
-      <Box className="pfp-container">
-        <Box>
-          <Heading className="name">Liam McCausland</Heading>
-          <Heading className="sub-title">Student / Programmer</Heading>
-        </Box>
-
-        <AvatarGroup>
-          <Avatar.Root className="avatar" size="1xl">
-            <Avatar.Fallback name="Liam McCausland" />
-            <Avatar.Image src="assets/pic.jpg" />
-          </Avatar.Root>
-        </AvatarGroup>
-      </Box>
-      <div className="about-container">
-        <Heading className="heading" as="h2" size="lg" borderBottom="2px solid" borderColor="gray.400" pb={2} textAlign="left">
-          About Me
-        </Heading>
-        <div className="about-items">
-          <Box className="body-text">
-            I am a Computer Science student at the <i>University of Manitoba</i> with a long-standing interest in technology and how software works behind the scenes. From a young age I enjoyed exploring computers, experimenting with programs, and learning how things function at a deeper level. That curiosity eventually led me to pursue computer science in university.
-
-Throughout my studies and personal projects, I have gained experience with several programming languages and development tools. I enjoy building projects, learning new technologies, and improving my problem-solving skills through coding. I’m especially interested in understanding how systems work and creating software that is both practical and well-designed.
-          </Box>
+    <main className="portfolio-page">
+      <section className="hero-section" id="top">
+        <div className="hero-copy">
+          <p className="eyebrow">Computer Science student · Winnipeg, MB</p>
+          <h1>Liam<br /><span>McCausland</span></h1>
+          <p className="hero-lede">I build practical software, explore how systems work, and turn curious ideas into thoughtful projects.</p>
+          <div className="hero-links">
+            <a className="button-link" href="#work">View my work ↓</a>
+            <ExternalLink href="assets/resume.pdf">Résumé</ExternalLink>
+          </div>
         </div>
-        <Heading className="heading" as="h2" size="lg" borderBottom="2px solid" borderColor="gray.400" pb={2} textAlign="left">
-          Languages & Technologies
-        </Heading>
-        <div className="skills-list">
-          {skillGroups.map((group) => (
-            <section className="skill-group" key={group.title}>
-              <h3>{group.title}</h3>
-              <div className="skill-items">
-                {group.items.map((item) => <SkillItem item={item} key={item[0]} />)}
-              </div>
-            </section>
+        <div className="hero-model" aria-label="Interactive 3D computer model">
+          <ModelSection />
+        </div>
+        <p className="scroll-note">Scroll to explore <span>↓</span></p>
+      </section>
+
+      <section className="content-section intro-section" id="about">
+        <p className="section-index">01 / About</p>
+        <div className="section-body two-column">
+          <Heading as="h2">A student who likes<br /><em>understanding the why.</em></Heading>
+          <div>
+            <p>I’m a Computer Science student at the <a className="text-link" href="https://umanitoba.ca/" target="_blank" rel="noopener noreferrer">University of Manitoba</a>, interested in software that is useful, understandable, and well designed.</p>
+            <p>My work spans interactive web applications, game development, algorithms, and the systems behind them. I enjoy learning by building — then refining the result until the details make sense.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="content-section work-section" id="work">
+        <p className="section-index">02 / Selected work</p>
+        <div className="section-heading-row"><Heading as="h2">Things I’ve built</Heading><span>({String(projects.length).padStart(2, '0')})</span></div>
+        <div className="project-list">
+          {projects.map((project, index) => (
+            <a className="project-row" href={project.link} target="_blank" rel="noopener noreferrer" key={project.title}>
+              <span className="project-number">0{index + 1}</span>
+              <span className="project-image"><img src={project.image} alt="" /></span>
+              <span className="project-info"><strong>{project.title}</strong><small>{project.description}</small></span>
+              <FaArrowUpRightFromSquare className="project-arrow" aria-hidden="true" />
+            </a>
           ))}
         </div>
-      </div>
-    </div>
+      </section>
+
+      <section className="content-section skills-section" id="skills">
+        <p className="section-index">03 / Technical skills</p>
+        <div className="section-body two-column"><Heading as="h2">Tools for<br /><em>making things work.</em></Heading><div className="skills-table">{skills.map(([label, value]) => <div className="skill-line" key={label}><strong>{label}</strong><span>{value}</span></div>)}</div></div>
+      </section>
+
+      <section className="content-section experience-section" id="experience">
+        <p className="section-index">04 / Experience</p>
+        <div className="section-body two-column"><Heading as="h2">Beyond<br /><em>the screen.</em></Heading><div className="experience-list">{experience.map((item) => <article className="experience-item" key={item.role}><div><strong>{item.role}</strong><span>{item.organization}</span></div><time>{item.dates}</time><p>{item.detail}</p></article>)}</div></div>
+      </section>
+
+      <section className="contact-section" id="contact">
+        <p className="section-index">05 / Contact</p>
+        <Heading as="h2">Have an idea?<br /><em>Let’s talk.</em></Heading>
+        <a className="email-link" href="mailto:liammccausland65@gmail.com">liammccausland65@gmail.com <FaArrowUpRightFromSquare aria-hidden="true" /></a>
+        <div className="contact-links"><ExternalLink href="https://github.com/LiamMcCausland"><FaGithub /> GitHub</ExternalLink><ExternalLink href="https://www.linkedin.com/in/liam-mccausland-a5a605306/"><FaLinkedin /> LinkedIn</ExternalLink></div>
+      </section>
+
+      <footer><span>© {new Date().getFullYear()} Liam McCausland</span><a href="#top">Back to top ↑</a></footer>
+    </main>
   )
 }

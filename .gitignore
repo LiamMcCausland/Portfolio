@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local backups and archives
+src/backup-original/
+*.backup/
+*.bak
+
+# Vite and tooling caches
+.vite/
+.freebuff/
+
+# macOS
+.DS_Store
+
+# Local environment files
+.env
+.env.*
+!.env.example
